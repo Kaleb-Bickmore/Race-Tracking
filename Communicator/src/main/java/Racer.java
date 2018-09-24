@@ -35,7 +35,7 @@ public class Racer {
         this.lastName = field[4];
         this.gender = field[5];
         this.age = field[6];
-        this.finishTime = "n/a";
+        this.finishTime = "0";
         this.raceDistance = raceField[2];
         this.raceName = raceField[1];
     }

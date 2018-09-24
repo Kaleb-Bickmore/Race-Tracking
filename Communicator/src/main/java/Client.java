@@ -61,7 +61,7 @@ public class Client{
     }
 	/**
 	 * 
-	 * @param racer This adds a new racer to the Clients list of untracked racers
+	 * @param racer This adds a new racer to the Clients list of un-tracked racers
 	 */
 	public void addNewRacers(Racer racer){
             try {
@@ -104,17 +104,18 @@ public class Client{
         bibsSubscribed.add(racer.getBibNumber());
         String sendMessage = "Status" + "," + racer.getBibNumber() + "," + racer.getStatus() + "," + racer.getStartTime()
                 + "," + racer.getDistanceCovered()+ "," + racer.getLastUpdate() + "," + racer.getFinishTime();
-        System.out.printf("Message sent to Client with port : %d  : is : %s",port,sendMessage);
         try {
             this.communicator.send(sendMessage, this.clientAddress, port);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
-        /**
-         *
-         * @param racer
-         */
+
+    /**
+     *
+     * @param racer the racer that the client wishes to stop tracking
+     * @param port the port of the client we are looking at
+     */
 	public void unRegister(Racer racer ,  int port) {
         if (racer == null || port != this.port) return;
         this.bibsSubscribed.remove(racer.getBibNumber());
