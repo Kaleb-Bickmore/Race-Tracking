@@ -3,18 +3,15 @@ public class Message {
 	private String field;
 	/**
 	 * 
-	 * @param type
 	 * @param field
 	 */
-	public Message(String type, String field) {
-		this.type = type;
+	public Message(String field) {
+		this.type = field.split(",")[0];
 		this.field = field;
 	}
-
 	public String getType() {
 		return type;
 	}
-
 	public String getField() {
 		return field;
 	}

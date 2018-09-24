@@ -59,7 +59,10 @@ public class Communicator implements Runnable {
      * @throws Exception        Exception throw is the parameters are invalid or there is socket error
      */
     public void send(String message, InetAddress targetAddress, int targetPort ) throws Exception {
-        if (datagramSocket==null) return;
+        if (datagramSocket==null){
+            System.out.println("datagram null");
+            return;
+        }
 
         if (message==null)
             throw new Exception("Cannot send an empty message");

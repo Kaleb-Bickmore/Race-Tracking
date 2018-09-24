@@ -20,26 +20,22 @@ public class Racer {
 	 * 
 	 * @param message
 	 */
-	public Racer(Message message) throws Exception {
+	public Racer(Message message, Message raceMessage) {
 
         String[] field = message.getField().split(",");
-        if (field[0] == "Registered") {
-            this.status = field[0];
-            this.bibNumber = field[1];
-            this.startTime = field[2];
-            this.distanceCovered = "0";
-            this.lastUpdate = field[2];
-            this.firstName = field[3];
-            this.lastName = field[4];
-            this.gender = field[5];
-            this.age = field[6];
-            this.finishTime = "-";
-            this.raceDistance = "0";
-            this.raceName = "-";
-        }
-        else{
-            throw new Exception("Cannot make class without Registered message from server.");
-        }
+        String[] raceField = raceMessage.getField().split(",");
+        this.status = field[0];
+        this.bibNumber = field[1];
+        this.startTime = field[2];
+        this.distanceCovered = "0";
+        this.lastUpdate = field[2];
+        this.firstName = field[3];
+        this.lastName = field[4];
+        this.gender = field[5];
+        this.age = field[6];
+        this.finishTime = "n/a";
+        this.raceDistance = raceField[2];
+        this.raceName = raceField[1];
     }
 
 	/**
@@ -49,25 +45,21 @@ public class Racer {
 
 	public void update(Message message) {
         String[] field = message.getField().split(",");
-        if (field[0] == "Race") {
-            this.raceName = field[1];
-            this.raceDistance = field[2];
-        }
-        if (field[1] == this.bibNumber) {
-            if (field[0] == "DidNotStart") {
+        if (field[1].equals(this.bibNumber)) {
+            if (field[0] .equals("DidNotStart") ) {
                 this.status = field[0];
                 this.lastUpdate = field[2];
-            } else if (field[0] == "Started") {
+            } else if (field[0].equals("Started") ) {
                 this.status = field[0];
                 this.lastUpdate = field[2];
                 this.startTime = field[2];
 
-            } else if (field[0] == "OnCourse") {
+            } else if (field[0].equals("OnCourse") ) {
                 this.status = field[0];
                 this.lastUpdate = field[2];
                 this.distanceCovered = field[3];
 
-            } else if (field[0] == "DidNotFinish") {
+            } else if (field[0].equals("DidNotFinish") ) {
                 this.status = field[0];
                 this.lastUpdate = field[2];
 
@@ -105,15 +97,6 @@ public class Racer {
 
 	public String getLastUpdate() {
 		return  lastUpdate;
-	}
-
-	public Boolean getFinished() {
-		if(finishTime != "-"){
-		    return true;
-        }
-        else{
-            return false;
-        }
 	}
 
 	public String getFinishTime() {
