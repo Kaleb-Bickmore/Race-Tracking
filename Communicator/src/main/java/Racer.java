@@ -16,10 +16,12 @@ public class Racer {
 	private String finishTime;
     private String raceName;
     private String raceDistance;
-	/**
-	 * 
-	 * @param message
-	 */
+
+    /**
+     *
+     * @param message A register message for a new racer to be added
+     * @param raceMessage The race message passed from the simulator at the beginning of a race
+     */
 	public Racer(Message message, Message raceMessage) {
 
         String[] field = message.getField().split(",");
@@ -40,7 +42,7 @@ public class Racer {
 
 	/**
 	 * 
-	 * @param message
+	 * @param message A message sent from the simulator containing some sort of update for the specified racer
 	 */
 
 	public void update(Message message) {
@@ -72,52 +74,98 @@ public class Racer {
         }
     }
 
+    /**
+     *
+     * @return the total distance of the race
+     */
     public String getRaceDistance() {
         return raceDistance;
     }
 
+    /**
+     *
+     * @return the name of the race that the racer is in
+     */
     public String getRaceName() {
         return raceName;
     }
 
+    /**
+     *
+     * @return current status of the racer
+     */
     public String getStatus() {
 		return status;
 	}
+
+    /**
+     *
+     * @return the unique identifier of the racer
+     */
 	public String getBibNumber() {
 		return bibNumber;
 	}
 
+    /**
+     *
+     * @return the time that the racer started at
+     */
 	public String getStartTime() {
 		return startTime;
 	}
 
+    /**
+     *
+     * @return the total distance the racer has gone
+     */
 	public String getDistanceCovered() {
 		return distanceCovered;
 	}
 
+    /**
+     *
+     * @return the last time the racer got an update
+     */
 	public String getLastUpdate() {
 		return  lastUpdate;
 	}
 
+    /**
+     *
+     * @return the time that the racer finished the race
+     */
 	public String getFinishTime() {
 		return finishTime;
 	}
+
+    /**
+     *
+     * @return the first name of the racer
+     */
     public String getFirstName() {
         return firstName;
     }
 
-
-
+    /**
+     *
+     * @return the last name of the racer
+     */
     public String getLastName() {
         return lastName;
     }
 
-
+    /**
+     *
+     * @return the gender of the racer
+     */
     public String getGender() {
         return gender;
     }
 
-
+    /**
+     *
+     * @return the age of the racer
+     */
     public String getAge() {
         return age;
     }

@@ -1,30 +1,30 @@
-2018-09-23 22:17:17,076 [1] DEBUG Base.Communicator - Setup UDP Client
-2018-09-23 22:17:17,114 [1] DEBUG Base.Communicator - Local Port 63502
-2018-09-23 22:17:17,121 [3] DEBUG Base.Communicator - Communicator Started
-2018-09-23 22:17:17,173 [1] DEBUG Base.Communicator - Send Hello to 127.0.0.1:12000
-2018-09-23 22:17:24,384 [3] DEBUG Base.Communicator - Got a Race,Bension Loop,16090 from 127.0.0.1:12000
-2018-09-23 22:17:24,384 [3] DEBUG Client.MainForm - Process messageText=Race,Bension Loop,16090
-2018-09-23 22:17:24,386 [3] DEBUG Client.Processor.RaceStartedProcessor - Started Race Bension Loop, 16090 meters
-2018-09-23 22:17:24,387 [3] DEBUG Base.Communicator - Got a Athlete,1,Valentine,Zamora,M,30 from 127.0.0.1:12000
-2018-09-23 22:17:24,388 [3] DEBUG Client.MainForm - Process messageText=Athlete,1,Valentine,Zamora,M,30
-2018-09-23 22:17:25,385 [3] DEBUG Base.Communicator - Got a Athlete,2,Deloras,Toole,F,19 from 127.0.0.1:12000
-2018-09-23 22:17:25,385 [3] DEBUG Client.MainForm - Process messageText=Athlete,2,Deloras,Toole,F,19
-2018-09-23 22:17:25,385 [3] DEBUG Base.Communicator - Got a Athlete,3,Chung,Holdaway,M,36 from 127.0.0.1:12000
-2018-09-23 22:17:25,386 [3] DEBUG Client.MainForm - Process messageText=Athlete,3,Chung,Holdaway,M,36
-2018-09-23 22:17:25,386 [3] DEBUG Base.Communicator - Got a Athlete,4,Dallas,Buskey,M,22 from 127.0.0.1:12000
-2018-09-23 22:17:25,386 [3] DEBUG Client.MainForm - Process messageText=Athlete,4,Dallas,Buskey,M,22
-2018-09-23 22:17:26,386 [3] DEBUG Base.Communicator - Got a Athlete,5,Major,Boots,M,35 from 127.0.0.1:12000
-2018-09-23 22:17:26,386 [3] DEBUG Client.MainForm - Process messageText=Athlete,5,Major,Boots,M,35
-2018-09-23 22:17:26,386 [3] DEBUG Base.Communicator - Got a Athlete,6,Adrian,Logan,M,30 from 127.0.0.1:12000
-2018-09-23 22:17:26,386 [3] DEBUG Client.MainForm - Process messageText=Athlete,6,Adrian,Logan,M,30
-2018-09-23 22:17:26,386 [3] DEBUG Base.Communicator - Got a Athlete,7,Justina,Lapoint,F,50 from 127.0.0.1:12000
-2018-09-23 22:17:26,386 [3] DEBUG Client.MainForm - Process messageText=Athlete,7,Justina,Lapoint,F,50
-2018-09-23 22:17:27,387 [3] DEBUG Base.Communicator - Got a Athlete,8,Eugenio,Fant,M,36 from 127.0.0.1:12000
-2018-09-23 22:17:27,387 [3] DEBUG Client.MainForm - Process messageText=Athlete,8,Eugenio,Fant,M,36
-2018-09-23 22:17:27,388 [3] DEBUG Base.Communicator - Got a Athlete,9,Evalyn,Zepp,F,49 from 127.0.0.1:12000
-2018-09-23 22:17:27,388 [3] DEBUG Client.MainForm - Process messageText=Athlete,9,Evalyn,Zepp,F,49
-2018-09-23 22:17:28,389 [3] DEBUG Base.Communicator - Got a Athlete,10,Richelle,Joslyn,F,38 from 127.0.0.1:12000
-2018-09-23 22:17:28,389 [3] DEBUG Client.MainForm - Process messageText=Athlete,10,Richelle,Joslyn,F,38
-2018-09-23 22:17:52,875 [1] DEBUG Base.Communicator - Send Subscribe,10 to 127.0.0.1:12000
-2018-09-23 22:17:52,876 [3] DEBUG Base.Communicator - Got a Status,10,Started,420,0,420,n/a from 127.0.0.1:12000
-2018-09-23 22:17:52,876 [3] DEBUG Client.MainForm - Process messageText=Status,10,Started,420,0,420,n/a
+2018-09-23 22:23:08,349 [1] DEBUG Base.Communicator - Setup UDP Client
+2018-09-23 22:23:08,391 [1] DEBUG Base.Communicator - Local Port 49203
+2018-09-23 22:23:08,392 [3] DEBUG Base.Communicator - Communicator Started
+2018-09-23 22:23:08,435 [1] DEBUG Base.Communicator - Send Hello to 127.0.0.1:12000
+2018-09-23 22:23:08,435 [3] DEBUG Base.Communicator - Got a Race,Bension Loop,16090 from 127.0.0.1:12000
+2018-09-23 22:23:08,436 [3] DEBUG Client.MainForm - Process messageText=Race,Bension Loop,16090
+2018-09-23 22:23:08,440 [3] DEBUG Client.Processor.RaceStartedProcessor - Started Race Bension Loop, 16090 meters
+2018-09-23 22:23:08,441 [3] DEBUG Base.Communicator - Got a Athlete,1,Valentine,Zamora,M,30 from 127.0.0.1:12000
+2018-09-23 22:23:08,441 [3] DEBUG Client.MainForm - Process messageText=Athlete,1,Valentine,Zamora,M,30
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,2,Deloras,Toole,F,19 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,2,Deloras,Toole,F,19
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,3,Chung,Holdaway,M,36 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,3,Chung,Holdaway,M,36
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,4,Dallas,Buskey,M,22 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,4,Dallas,Buskey,M,22
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,5,Major,Boots,M,35 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,5,Major,Boots,M,35
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,6,Adrian,Logan,M,30 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,6,Adrian,Logan,M,30
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,7,Justina,Lapoint,F,50 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,7,Justina,Lapoint,F,50
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,8,Eugenio,Fant,M,36 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,8,Eugenio,Fant,M,36
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,9,Evalyn,Zepp,F,49 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,9,Evalyn,Zepp,F,49
+2018-09-23 22:23:08,448 [3] DEBUG Base.Communicator - Got a Athlete,10,Richelle,Joslyn,F,38 from 127.0.0.1:12000
+2018-09-23 22:23:08,448 [3] DEBUG Client.MainForm - Process messageText=Athlete,10,Richelle,Joslyn,F,38
+2018-09-23 22:23:11,147 [1] DEBUG Base.Communicator - Send Subscribe,1 to 127.0.0.1:12000
+2018-09-23 22:23:11,148 [3] DEBUG Base.Communicator - Got a Status,1,Registered,0,0,0,n/a from 127.0.0.1:12000
+2018-09-23 22:23:11,148 [3] DEBUG Client.MainForm - Process messageText=Status,1,Registered,0,0,0,n/a

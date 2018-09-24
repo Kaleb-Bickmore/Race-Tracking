@@ -2,10 +2,11 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
 import static java.nio.charset.StandardCharsets.UTF_16BE;
 
+/**
+ * Users A communicator to speak with the simulator and multiple clients.
+ */
 public class RaceServer {
     private Communicator communicator;
     private ArrayList<Racer> racers;
@@ -13,55 +14,89 @@ public class RaceServer {
     private Message raceMessage;
     private Boolean done;
 
+    /**
+     * Constructor
+     * @throws SocketException
+     */
     public RaceServer() throws SocketException {
         this.racers = new ArrayList<Racer>();
         this.clients = new ArrayList<Client>();
         this.communicator = new Communicator();
         done = false;
     }
+
+    /**
+     * Overloaded Constructor for setting the port
+     * @param port the port that the communicator will be established at
+     * @throws SocketException
+     */
     public RaceServer(int port) throws SocketException {
         this.racers = new ArrayList<Racer>();
         this.clients = new ArrayList<Client>();
         this.communicator = new Communicator(port);
         done = false;
     }
+
+    /**
+     *
+     * @return the racers that have been registered
+     */
     public ArrayList<Racer> getRacers() {
         return racers;
     }
 
+    /**
+     *
+     * @return the message the simulator sends at the beginning of a race
+     */
     public Message getRaceMessage() { return raceMessage; }
 
+    /**
+     *
+     * @param raceMessage the message the simulator sends at the beginning of a race
+     */
     public void setRaceMessage(Message raceMessage) {
         this.raceMessage = raceMessage;
     }
 
+    /**
+     *
+     * @return the clients that have registered to the race server
+     */
     public ArrayList<Client> getClients() {
         return clients;
     }
+
+    /**
+     *
+     * @return the port that the communicator is established on
+     */
     public int getLocalPort(){
         return this.communicator.getLocalPort(); }
 
     /**
-     * @param client
+     * @param client A client that has sent a hello message and wishes to track the race
      */
     public void register(Client client) {
         this.clients.add(client);
     }
 
 
-
-
-
     /**
-     * @param message
+     * notifies the clients of changes within the race
      */
-    private void notifyClients(Message message) {
+    private void notifyClients() {
 
         for (Client client : this.clients) {
             client.update(this.racers);
         }
     }
 
+    /**
+     * this function continues to run endlessly watching for messages sent to the communicators port.
+     * Depending on the message sent, we can add clients, start the race, subscribe or unsubscribe
+     * a client to a racer, or update the clients on their current subscribed racers.
+     */
     public void run() {
         while (!done) {
             DatagramPacket packet = null;
@@ -74,6 +109,7 @@ public class RaceServer {
             int senderPort = packet.getPort();
             InetAddress senderAddress = packet.getAddress();
             Message messageToParse = new Message(message);
+            // Start the race
             if(messageToParse.getType().equals("Race")){
                 this.raceMessage = messageToParse;
                 for (Client client : this.clients){
@@ -81,10 +117,12 @@ public class RaceServer {
                 }
 
             }
+            // add a new client
             else if (message.equals("Hello")) {
                 Client client = new Client(this.racers, this.communicator, this.raceMessage, senderAddress,senderPort);
                 this.register(client);
             }
+            // Subscribe a client to a particular racer
             else if (messageToParse.getType().equals("Subscribe")) {
                 Racer racerToAdd = null;
                 for (Racer racer : this.racers) {
@@ -97,6 +135,7 @@ public class RaceServer {
                     client.register(racerToAdd, senderPort);
                 }
             }
+            //Unsubscribe a client from a particular racer
             else if (messageToParse.getType().equals("Unsubscribe")) {
                 Racer racerToAdd = null;
                 for (Racer racer : this.racers) {
@@ -109,14 +148,19 @@ public class RaceServer {
                     client.unRegister(racerToAdd, senderPort);
                 }
             }
+            // Update racer information and update the clients on their subscribed racers
             else {
                 this.updateRacers(messageToParse);
-                this.notifyClients(messageToParse);
+                this.notifyClients();
 
             }
         }
     }
 
+    /**
+     *
+     * @param message a register message to add a new racer to the race
+     */
     public void updateRacers(Message message) {
         if (message.getField().split(",")[0].equals("Registered")) {
             Racer newRacer = new Racer(message,this.raceMessage);

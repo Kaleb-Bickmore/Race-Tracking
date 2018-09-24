@@ -7,10 +7,14 @@ public class Client{
 	private Communicator communicator;
 	private int port;
 
-	/**
-	 * 
-	 * @param allRacers
-	 */
+    /**
+     *
+     * @param allRacers List of all the registered racers
+     * @param communicator The communicator that is used to send messages to the client
+     * @param raceMessage the message the simulator sends at the beginning of a race
+     * @param clientAddress The address of the client sending a message to the race server
+     * @param port the port of the client sending a message to the race server
+     */
 	public Client(ArrayList<Racer> allRacers, Communicator communicator, Message raceMessage,InetAddress clientAddress, int port) {
 	    this.bibsSubscribed = new ArrayList<String>();
 		this.clientAddress = clientAddress;
@@ -35,8 +39,8 @@ public class Client{
 
     /**
      *
-     * @param raceMessage
-     * @param allRacers
+     * @param raceMessage This is a message that the Simulation sends at the beginning of a race
+     * @param allRacers These are all the registered racers
      */
     public void startRace(Message raceMessage, ArrayList<Racer> allRacers){
         try {
@@ -57,7 +61,7 @@ public class Client{
     }
 	/**
 	 * 
-	 * @param racer
+	 * @param racer This adds a new racer to the Clients list of untracked racers
 	 */
 	public void addNewRacers(Racer racer){
             try {
@@ -71,7 +75,7 @@ public class Client{
 
     /**
      *
-     * @param racers
+     * @param racers The list of racers that we will use to update all the racers the user is subscribed to
      */
 	public void update(ArrayList <Racer> racers) {
         for (String bibs : this.bibsSubscribed){
@@ -92,13 +96,15 @@ public class Client{
 
 	/**
 	 * 
-	 * @param racer
+	 * @param racer the racer we are going to give a status update for
+     * @param port The port of the Client we want to send a message to
 	 */
 	public void register(Racer racer , int port) {
         if (racer == null || port != this.port) return;
         bibsSubscribed.add(racer.getBibNumber());
         String sendMessage = "Status" + "," + racer.getBibNumber() + "," + racer.getStatus() + "," + racer.getStartTime()
                 + "," + racer.getDistanceCovered()+ "," + racer.getLastUpdate() + "," + racer.getFinishTime();
+        System.out.printf("Message sent to Client with port : %d  : is : %s",port,sendMessage);
         try {
             this.communicator.send(sendMessage, this.clientAddress, port);
         } catch (Exception e) {
