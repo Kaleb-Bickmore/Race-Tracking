@@ -6,79 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97ebee16-4364-43dc-af6a-8a605ec462da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Communicator.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/4.8/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/artifacts/Communicator_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/Communicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/DummyMessageProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/IMessageProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/RaceServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/production/classes/Racer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/test/classes/ClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/test/classes/CommunicatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/test/classes/MessageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/test/classes/RaceServerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/out/test/classes/RacerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/Communicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/DummyMessageProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/IMessageProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/RaceServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/main/java/Racer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/test/java/ClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/test/java/CommunicatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/test/java/MessageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/test/java/RaceServerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/src/test/java/RacerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_002d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_003d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_004d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/Communicator.vpp~1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Communicator/vpproject/TrackingServerDiagram.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CommunicatorKaleb.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Client.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client.log.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client.log.5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Communicator (csharp)/Communicator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Communicator (java)/Communicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Communicator (java)/CommunicatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Communicator (java)/DummyMessageProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Communicator (java)/IMessageProcessor.java" beforeDir="false" />
-    </list>
+    <list default="true" id="97ebee16-4364-43dc-af6a-8a605ec462da" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -128,6 +56,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Communicator" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1039981840">
@@ -194,6 +139,7 @@
     <session id="-1127900800">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -804,7 +750,7 @@
       <workItem from="1537465250524" duration="12486000" />
       <workItem from="1537639043368" duration="27218000" />
       <workItem from="1537740383433" duration="20506000" />
-      <workItem from="1537851418843" duration="244000" />
+      <workItem from="1537851418843" duration="355000" />
     </task>
     <servers />
   </component>
@@ -841,7 +787,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63053000" />
+    <option name="totallyTimeSpent" value="63164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -853,7 +799,7 @@
       <window_info id="Properties Pane" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49503547" visible="true" weight="0.14362416" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49503547" visible="true" weight="0.14362416" />
       <window_info id="Structure" order="8" sideWeight="0.502994" side_tool="true" weight="0.27248323" />
       <window_info anchor="bottom" id="Message Pane" order="0" weight="0.17021276" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32907802" />
@@ -872,13 +818,13 @@
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Maven Projects" order="2" />
-      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info active="true" anchor="right" id="Gradle" order="3" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Coverage" order="6" sideWeight="0.50187266" side_tool="true" weight="0.04832215" />
       <window_info anchor="right" id="PlantUML" order="7" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="9" sideWeight="0.49812734" visible="true" weight="0.04832215" />
+      <window_info anchor="right" id="Database" order="9" sideWeight="0.49812734" weight="0.04832215" />
       <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
     </layout>
