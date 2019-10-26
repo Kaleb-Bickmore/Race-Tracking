@@ -1,4 +1,4 @@
-# CS5700HW2
+# Race Tracking
 @author: Kaleb Bickmore</br>
 @date: 9/24/2018
 ## raceTrackingServer.exe
